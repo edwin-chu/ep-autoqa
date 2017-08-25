@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="EP Test Suite">
+  	<test verbose="2" name="Chrome Test">
+    	<groups>
+    		<run>
+    			<exclude name="firefox"></exclude>
+    			<exclude name="safari"></exclude>
+    		</run>
+    	</groups>
+  		<classes>
+  			<class name="com.sqa.ec.EPNavigationTest"/>
+  			<class name="com.sqa.ec.CFNavTest"/>
+			<class name="com.sqa.ec.JPNavTest"/>
+			<class name="com.sqa.ec.ESBNavTest"/>
+			<class name="com.sqa.ec.LuckyDiceTest"/>
+			<class name="com.sqa.ec.CoinSlotTest"/>
+			<class name="com.sqa.ec.ShopNavTest"/>
+			<class name="com.sqa.ec.LeaderBoardTest"/>
+			<class name="com.sqa.ec.SkinDepositTest"/>
+  		</classes>
+  	</test> <!-- Default test -->
+  	<test verbose="2" name="Firefox Test">
+    	<groups>
+    		<run>
+    			<exclude name="chrome"></exclude>
+    			<exclude name="safari"></exclude>
+    		</run>
+    	</groups>
+  		<classes>
+  			<class name="com.sqa.ec.EPNavigationTest"/>
+  			<class name="com.sqa.ec.CFNavTest"/>
+			<class name="com.sqa.ec.JPNavTest"/>
+			<class name="com.sqa.ec.ESBNavTest"/>
+			<class name="com.sqa.ec.LuckyDiceTest"/>
+			<class name="com.sqa.ec.CoinSlotTest"/>
+			<class name="com.sqa.ec.ShopNavTest"/>
+			<class name="com.sqa.ec.LeaderBoardTest"/>
+			<class name="com.sqa.ec.SkinDepositTest"/>
+  		</classes>
+  	</test> <!-- Default test -->
+</suite> <!-- Default suite -->
